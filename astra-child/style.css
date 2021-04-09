@@ -1,0 +1,238 @@
+/*
+    Theme Name: Astra Child
+    Template: Astra
+
+    Description:  Theme for Creative Club
+    Author:       Sara Valeria Fossati
+    Author URI:   http://example.com
+    Version:      1.0.0
+    License:      GNU General Public License v2 or later
+    License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: astra
+    Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face {
+    font-family: CeraPro;
+    src: url(fonts/Cera\ Pro\ Medium.otf);
+}
+  
+body, .elementor-widget-text-editor, .elementor-widget-heading, .elementor-heading-title{
+    font-family: CeraPro !important;
+}
+
+a{
+    color: #29FAA0;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+    background-color: #29FAA0;
+    color: #232324;
+    display: block;
+    margin: 0 auto;
+}
+
+.main_menu a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.main_menu a:hover{
+    color: #29FAA0;
+}
+
+.current-menu-item a{
+    color: #29FAA0;
+}
+
+.main_menu ul li{
+    list-style-type: none;
+}
+
+body{
+    background-color: #29FAA0;
+    background-image: -webkit-linear-gradient(60deg, #ffffff 50%, #29FAA0 50%);
+}
+
+/* footer con icone social */
+.site-primary-footer-wrap{
+    padding: 0;
+    padding-top: 10px;
+}
+
+/* footer con paragrafo */
+.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+    background-color: #232324;
+    padding-top: 10px;
+}
+
+.page-item-2{
+    background-image: url('img/home.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px; 
+}
+
+.page-item-6{
+    background-image: url('img/people.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px; 
+}
+
+.page-item-8{
+    background-image: url('img/pen.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.page-item-10{ 
+    background-image: url('img/telephone.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.svg-inline--fa.fa-w-8{
+    font-size: 40px;
+    color: #29FAA0;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    padding: 5px;
+    width: 40px;
+}
+
+.titles{
+	text-decoration: underline !important;
+	text-decoration-color: white !important;
+	text-decoration-thickness: 10px !important;
+}
+
+/* Remove pages from menu */
+.page-item-264, .page-item-375, .page-item-400{
+    display: none;
+}
+
+
+/* Menu mobile */
+@media (max-width: 900px){
+
+    .logo{
+        width: 80px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main_menu{
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        background-color: #232324;
+        width: 100%;
+        height: 50px;
+    }
+
+    .main_menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 10px 15px;
+    }
+ 
+
+    .main_menu ul li a{
+        font-size: 14px;  
+    }
+
+    .main_menu ul li{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    body{
+        background-color: #29FAA0;
+        background-image: -webkit-linear-gradient(30deg, #ffffff 50%, #29FAA0 50%);
+        max-height: 900px;
+    }
+
+    /* footer con paragrafo */
+    .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+        background-color: #232324;
+        padding-bottom: 4em;
+        padding-top: 10px;
+    }
+
+    .ast-footer-html-inner{
+        margin-bottom: 20px;
+    }
+}
+
+/* Menu desktop */
+@media (min-width: 901px){
+
+    .main_menu ul li{
+        margin: 2em 0;
+    }
+    
+    .main_menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;  
+        margin-top: 4em;
+    }
+
+    header{
+        width: 13%;
+        height: 100vh;
+        margin-left: 20px;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    body{
+        padding-right: 3em;
+    }
+    
+    #primary, footer{
+        width: 80%;
+        float: right;
+    }
+    
+    .entry-title{
+        display: none;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+
